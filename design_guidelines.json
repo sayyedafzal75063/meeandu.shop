@@ -1,0 +1,159 @@
+{
+  "project_name": "Meè & U — Perfume & Attar",
+  "archetype": "ARCHETYPE 5: LUXURY & HAUTE PARFUMERIE (Cinematic Obsidian, Milled Gold, Crisp Warm White)",
+  "art_direction": "Awwwards Site-of-the-Day caliber luxury fragrance store. Features kinetic hero reveals, spotlight product frames, numbered manifesto chapters for brand story, slow editorial marquee drift, lenis smooth scrolling, ambient canvas gold particle light glow, and seamless WhatsApp ordering.",
+  "theme": "Dark Mode Default with Pure Gold & Velvet Obsidian accents",
+  "colors": {
+    "bg_dark": "#070707",
+    "bg_surface": "#0E0E0E",
+    "bg_surface_elevated": "#141414",
+    "bg_card": "#0A0A0A",
+    "gold_primary": "#D4AF37",
+    "gold_light": "#F3E5AB",
+    "gold_dark": "#9A7B1C",
+    "gold_accent": "#C5A059",
+    "gold_glow": "rgba(212, 175, 55, 0.15)",
+    "text_primary": "#F8F8F6",
+    "text_secondary": "#A1A19A",
+    "text_muted": "#6E6E68",
+    "border_gold_subtle": "rgba(212, 175, 55, 0.2)",
+    "border_gold_strong": "rgba(212, 175, 55, 0.5)",
+    "border_dark": "rgba(255, 255, 255, 0.08)",
+    "overlay_glass": "rgba(7, 7, 7, 0.75)"
+  },
+  "typography": {
+    "headings_serif": "Cormorant Garamond, Playfair Display, serif",
+    "headings_script": "Pinyon Script, Alex Brush, Great Vibes, cursive",
+    "body_sans": "Satoshi, General Sans, Outfit, sans-serif",
+    "mono_accent": "JetBrains Mono, monospace",
+    "font_google_import": "https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Great+Vibes&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&family=Pinyon+Script&display=swap",
+    "h1_hero": "text-4xl sm:text-6xl lg:text-7xl font-serif font-light tracking-tight leading-tight",
+    "h2_section": "text-3xl sm:text-4xl lg:text-5xl font-serif font-light tracking-tight text-white",
+    "subheading_script": "font-script text-2xl sm:text-3xl text-[#D4AF37]",
+    "overline_label": "text-xs uppercase tracking-[0.25em] text-[#C5A059] font-mono",
+    "body_copy": "text-base sm:text-lg text-[#A1A19A] leading-relaxed font-sans"
+  },
+  "exact_sections_order_and_copy": [
+    {
+      "step": 1,
+      "id": "header",
+      "name": "Navigation Header",
+      "details": "Fixed backdrop-blur-xl bg-[#070707]/80 border-b border-[#D4AF37]/20 z-50. Gold script logo image/svg, Nav links: Home, Shop, Story (#story), Contact, Admin, and 'Order on WhatsApp' quick CTA button."
+    },
+    {
+      "step": 2,
+      "id": "hero",
+      "name": "Hero Section",
+      "details": "Kinetic line-by-line reveal animation. Title 'Meè & U' in elegant gold script + 'Perfume & Attar' in tall serif. Subtext: 'Crafted in small batches with pure oil-based formulations for an enduring sillage.' Two CTAs: 'Explore Collection' (scrolls to catalog) & 'Order on WhatsApp'. Elegant dark ambient canvas background with floating gold shimmer particles. NO bottle image in hero as specified."
+    },
+    {
+      "step": 3,
+      "id": "founded_line",
+      "name": "Est. 2025 · Mumbai",
+      "details": "Centered editorial line flanked by subtle gold hairline rules: 'Est. 2025 · Mumbai'."
+    },
+    {
+      "step": 4,
+      "id": "trust_badges",
+      "name": "Trust Badges",
+      "details": "Three minimal gold-bordered cards with luxury line icons: 1. Pure Oil-Based (Non-alcoholic, rich botanical extracts) 2. Long-Lasting (12+ hours enduring sillage) 3. Small-Batch (Hand-poured in Mumbai atelier)."
+    },
+    {
+      "step": 5,
+      "id": "featured_attars",
+      "name": "Featured Attars",
+      "details": "Section label 'Signature Scents'. Spotlight cards for 'Oud Royale' (Combodian Oud, Smoked Amber, Taif Rose) and 'Musk Al Ameer' (White Musk, Sandalwood, Golden Honey). Includes olfactory notes, size selectors (6ml/12ml), pricing, and Instant WhatsApp order deep-link."
+    },
+    {
+      "step": 6,
+      "id": "featured_perfumes",
+      "name": "Featured Perfumes",
+      "details": "Section label 'Refined EDPs'. Spotlight cards for 'Midnight Bloom' (Black Plum, Vanilla Absolute, Night Jasmine) and 'Ocean Breeze' (Sea Salt, Driftwood, Crisp Bergamot). Includes fragrance pyramid breakdown, size options (50ml/100ml), pricing, and WhatsApp order trigger."
+    },
+    {
+      "step": 7,
+      "id": "view_all_button",
+      "name": "View All Products Action",
+      "details": "Prominent full-width or pill-shaped gold button 'View All Products' navigating or expanding to the full shop filter catalog."
+    },
+    {
+      "step": 8,
+      "id": "special_offers",
+      "name": "Special Offers & Combos",
+      "details": "Special combo bundles (e.g. 'Royal Oud & Musk Duo', 'Discovery Quintet'). Dynamically hidden if no active offers exist in state/admin."
+    },
+    {
+      "step": 9,
+      "id": "our_story",
+      "name": "Our Story",
+      "details": "id='story'. Heading 'A tribute to timeless fragrance.' Structured into numbered manifesto chapters: '01 / The Origin', '02 / The Alchemy', '03 / The Sillage' with editorial storytelling on Mumbai craftsmanship."
+    },
+    {
+      "step": 10,
+      "id": "editorial_marquee",
+      "name": "Slow Editorial Marquee",
+      "details": "Infinite slow drifting marquee with low contrast gold text: 'HAND-POURED IN MUMBAI · PURE OIL-BASED FORMULATION · NO SYNTHETIC DILUTION · ENDURING SILLAGE · EXTRACT DE PARFUM · BATCH 2025'"
+    },
+    {
+      "step": 11,
+      "id": "cta_band",
+      "name": "WhatsApp Conversion Band",
+      "details": "High impact conversion banner: 'Order on WhatsApp. Delivered to your door.' Large glowing WhatsApp direct order CTA button."
+    },
+    {
+      "step": 12,
+      "id": "footer",
+      "name": "Footer",
+      "details": "Gold script logo image + Explore links (Shop, Story, Attars, EDPs, Offers) + Contact block (Mumbai Atelier address, phone, email) + Admin login link + copyright."
+    },
+    {
+      "step": 13,
+      "id": "shop_page",
+      "name": "Shop Catalog & Filtering",
+      "details": "Interactive tab filters: 'All', 'Signature Attars', 'Refined Perfumes', 'Special Offers/Combos'. Search input by fragrance name or note (e.g., Oud, Rose, Musk, Ocean). Sort by Price/Popularity."
+    },
+    {
+      "step": 14,
+      "id": "pdp_modal",
+      "name": "Product Detail Page / Quick View Modal",
+      "details": "Olfactory Pyramid visual (Top Notes, Heart Notes, Base Notes), bottle size selector with real-time price updates, quantity selector, and pre-formatted WhatsApp order builder ('Hi Meè & U, I want to order...')."
+    },
+    {
+      "step": 15,
+      "id": "contact_section",
+      "name": "Contact & Inquiry",
+      "details": "EmailJS form integration, store locator details in Mumbai, direct WhatsApp help link, and FAQ accordion."
+    },
+    {
+      "step": 16,
+      "id": "admin_panel",
+      "name": "Admin Dashboard",
+      "details": "Password-protected modal/route (`/admin` or header trigger). Manage Products (CRUD), Manage Active Special Offers (Toggle active/inactive), and Update WhatsApp Phone Numbers."
+    }
+  ],
+  "image_urls": {
+    "gold_abstract_background": "https://images.unsplash.com/photo-1647101734210-ff5d79813069?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBwZXJmdW1lJTIwYm90dGxlJTIwZGFyayUyMGJhY2tncm91bmQlMjBnb2xkfGVufDB8fHx8MTc4NzY0MjU5OXww&ixlib=rb-4.1.0&q=85",
+    "gold_bokeh_texture": "https://images.pexels.com/photos/37127787/pexels-photo-37127787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "oud_royale_attar": "https://images.pexels.com/photos/30618765/pexels-photo-30618765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "musk_al_ameer": "https://images.pexels.com/photos/10786706/pexels-photo-10786706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "midnight_bloom_edp": "https://images.pexels.com/photos/21008941/pexels-photo-21008941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "ocean_breeze_edp": "https://images.unsplash.com/photo-1737920459846-2d0318700658?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBwZXJmdW1lJTIwYm90dGxlJTIwZGFyayUyMGJhY2tncm91bmQlMjBnb2xkfGVufDB8fHx8MTc4NzY0MjU5OXww&ixlib=rb-4.1.0&q=85",
+    "combo_pack": "https://images.unsplash.com/photo-1758871993077-e084cc7eca86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxvdWQlMjBwZXJmdW1lJTIwYm90dGxlJTIwZGFyayUyMGx1eHVyeSUyMGdvbGR8ZW58MHx8fHwxNzg3NjQyNjA1fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "component_design_specs": {
+    "cards": "Dark obsidian slate `#0A0A0A` with 1px border `border-[#D4AF37]/20` and subtle inner gold gradient glow on hover (`hover:border-[#D4AF37]/60 hover:shadow-[0_0_25px_rgba(212,175,55,0.15)]`). Padded generously with `p-6 sm:p-8`.",
+    "buttons": {
+      "primary": "bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#C5A059] text-black font-medium tracking-wider uppercase text-xs sm:text-sm py-3.5 px-8 rounded-none border border-[#D4AF37] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all duration-300 transform hover:-translate-y-0.5",
+      "secondary": "bg-transparent text-[#F8F8F6] font-medium tracking-wider uppercase text-xs sm:text-sm py-3.5 px-8 rounded-none border border-[#D4AF37]/40 hover:border-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all duration-300",
+      "whatsapp": "bg-[#25D366] text-black font-semibold tracking-wide py-3 px-6 rounded-none hover:bg-[#20ba5a] hover:shadow-[0_0_20px_rgba(37,211,102,0.3)] transition-all duration-300 flex items-center justify-center gap-2"
+    },
+    "badges": "bg-[#141414] text-[#D4AF37] border border-[#D4AF37]/30 text-[10px] sm:text-xs font-mono uppercase tracking-[0.2em] px-3 py-1 rounded-none",
+    "inputs": "bg-[#0E0E0E] text-[#F8F8F6] border border-[#D4AF37]/30 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] px-4 py-3 rounded-none placeholder-[#6E6E68] text-sm"
+  },
+  "whatsapp_integration": {
+    "default_phone": "919876543210",
+    "message_template": "Hi Meè & U! I'd like to order: {product_name} ({size}) - Price: ₹{price}. Please share payment and delivery details.",
+    "combo_template": "Hi Meè & U! I'm interested in the Special Offer: {combo_title} - Price: ₹{price}."
+  },
+  "data_testid_guidelines": "Every interactive button, link, input, tab, card, and modal element MUST include a data-testid attribute in kebab-case. Examples: data-testid='hero-explore-button', data-testid='hero-whatsapp-button', data-testid='product-card-oud-royale', data-testid='add-to-cart-whatsapp-button', data-testid='admin-login-submit', data-testid='shop-tab-attars'."
+}

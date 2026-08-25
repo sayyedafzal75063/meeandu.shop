@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 130">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3E5AB"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#9A7B1C"/>
+    </linearGradient>
+  </defs>
+  <text x="170" y="66" text-anchor="middle" font-family="'Pinyon Script','Segoe Script','Brush Script MT','Snell Roundhand',cursive" font-size="56" fill="url(#gold)">Me&#232; &amp; U</text>
+  <g stroke="url(#gold)" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <path d="M48 98 H132"/>
+    <path d="M208 98 H292"/>
+  </g>
+  <g fill="url(#gold)">
+    <path d="M170 82 C 161 92, 159 101, 170 112 C 181 101, 179 92, 170 82 Z"/>
+    <path d="M170 89 C 155 88, 146 96, 148 105 C 157 103, 164 98, 170 92 Z" opacity="0.85"/>
+    <path d="M170 89 C 185 88, 194 96, 192 105 C 183 103, 176 98, 170 92 Z" opacity="0.85"/>
+    <circle cx="170" cy="116" r="1.8"/>
+  </g>
+</svg>

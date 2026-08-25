@@ -46,11 +46,11 @@ export default function Home() {
   };
 
   return (
-    <div data-testid="home-page" className="bg-[#070707] min-h-screen">
+    <div data-testid="home-page" className="bg-[#F5EFE6] min-h-screen">
       <SiteNavbar />
 
       {/* ---------- HERO ---------- */}
-      <section ref={heroRef} data-testid="hero-section" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section ref={heroRef} data-testid="hero-section" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#070707]">
         <motion.div style={{ y: glowY }} className="absolute inset-0 pointer-events-none">
           <div className="animate-glow absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 h-[60vmin] w-[80vmin] rounded-full bg-[#D4AF37]/10 blur-[120px]" />
           <div className="absolute right-[8%] top-[18%] h-[30vmin] w-[30vmin] rounded-full bg-[#D4AF37]/5 blur-[90px]" />
@@ -108,15 +108,15 @@ export default function Home() {
       </section>
 
       {/* ---------- TRUST BADGES ---------- */}
-      <section data-testid="trust-badges" className="border-y border-[#D4AF37]/15 bg-[#0A0A0A]">
+      <section data-testid="trust-badges" className="border-y border-[#D4AF37]/25 bg-[#F5EFE6]">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 py-14 grid gap-8 sm:grid-cols-3">
           {BADGES.map((b, i) => (
             <Reveal key={b.title} delay={i * 0.12}>
               <div data-testid={`trust-badge-${i + 1}`} className="flex items-start gap-4 p-6 border border-[#D4AF37]/20 hover:border-[#D4AF37]/50 transition-colors duration-500">
                 <b.icon size={26} strokeWidth={1.4} className="text-[#D4AF37] shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="f-serif text-xl text-[#F8F8F6]">{b.title}</h3>
-                  <p className="mt-1 text-sm text-[#A1A19A]">{b.text}</p>
+                  <h3 className="f-serif text-xl text-[#241E17]">{b.title}</h3>
+                  <p className="mt-1 text-sm text-[#6B5E4E]">{b.text}</p>
                 </div>
               </div>
             </Reveal>
@@ -129,7 +129,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <SectionLabel testId="featured-attars-label">Signature Scents</SectionLabel>
           <Reveal delay={0.1}>
-            <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#F8F8F6]">Featured Attars</h2>
+            <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#241E17]">Featured Attars</h2>
           </Reveal>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 max-w-4xl">
             {attars.map((p, i) => (
@@ -144,7 +144,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <SectionLabel testId="featured-perfumes-label">Refined EDPs</SectionLabel>
           <Reveal delay={0.1}>
-            <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#F8F8F6]">Featured Perfumes</h2>
+            <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#241E17]">Featured Perfumes</h2>
           </Reveal>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 max-w-4xl">
             {perfumes.map((p, i) => (
@@ -155,7 +155,7 @@ export default function Home() {
             <Link
               to="/shop"
               data-testid="view-all-products-button"
-              className="inline-flex items-center gap-2 bg-transparent text-[#F8F8F6] f-mono uppercase tracking-[0.25em] text-xs sm:text-sm py-4 px-10 border border-[#D4AF37]/50 hover:border-[#D4AF37] hover:bg-[#D4AF37]/10 hover:shadow-[0_0_24px_rgba(212,175,55,0.2)] transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-transparent text-[#241E17] f-mono uppercase tracking-[0.25em] text-xs sm:text-sm py-4 px-10 border border-[#D4AF37]/60 hover:border-[#D4AF37] hover:bg-[#D4AF37]/15 hover:shadow-[0_0_24px_rgba(212,175,55,0.2)] transition-all duration-300"
             >
               View All Products <ArrowRight size={15} />
             </Link>
@@ -165,11 +165,11 @@ export default function Home() {
 
       {/* ---------- SPECIAL OFFERS (hidden when none active) ---------- */}
       {offers.length > 0 && (
-        <section data-testid="offers-section" className="py-24 sm:py-28 bg-[#0A0A0A] border-y border-[#D4AF37]/15">
+        <section data-testid="offers-section" className="py-24 sm:py-28 bg-[#F5EFE6] border-y border-[#D4AF37]/25">
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <SectionLabel testId="offers-label">Limited Combos</SectionLabel>
             <Reveal delay={0.1}>
-              <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#F8F8F6]">Special Offers</h2>
+              <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#241E17]">Special Offers</h2>
             </Reveal>
             <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {offers.map((o, i) => (
@@ -221,7 +221,7 @@ export default function Home() {
           <div>
             <SectionLabel testId="story-label">Our Story</SectionLabel>
             <Reveal delay={0.1}>
-              <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#F8F8F6] leading-tight">
+              <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#241E17] leading-tight">
                 A tribute to timeless fragrance.
               </h2>
             </Reveal>
@@ -229,7 +229,7 @@ export default function Home() {
               <div className="mt-8 space-y-7">
                 <div className="flex gap-5">
                   <span className="f-mono text-xs text-[#C5A059] pt-1.5 shrink-0">01</span>
-                  <p className="text-base text-[#A1A19A] leading-relaxed">
+                  <p className="text-base text-[#6B5E4E] leading-relaxed">
                     Attar-making is an art passed down through generations — pure oils, patiently
                     blended, never rushed. Meè &amp; U was born in Mumbai to honour that tradition:
                     every bottle is hand-blended in small batches, the way it has always been done.
@@ -238,7 +238,7 @@ export default function Home() {
                 <div className="hairline" />
                 <div className="flex gap-5">
                   <span className="f-mono text-xs text-[#C5A059] pt-1.5 shrink-0">02</span>
-                  <p className="text-base text-[#A1A19A] leading-relaxed">
+                  <p className="text-base text-[#6B5E4E] leading-relaxed">
                     We use only pure oil-based formulations — no alcohol, no shortcuts. The result is
                     a fragrance that sits close to the skin, deepens through the day, and stays with
                     you long after the moment has passed. Rooted in tradition, made for you.
@@ -258,14 +258,14 @@ export default function Home() {
         <div className="relative mx-auto max-w-4xl px-5 sm:px-8 text-center">
           <SectionLabel testId="cta-label">Ready to find your scent?</SectionLabel>
           <Reveal delay={0.1}>
-            <h2 className="mt-5 f-serif text-3xl sm:text-4xl lg:text-6xl font-light text-[#F8F8F6] leading-tight">
+            <h2 className="mt-5 f-serif text-3xl sm:text-4xl lg:text-6xl font-light text-[#241E17] leading-tight">
               Order on WhatsApp.
               <br />
               <span className="text-gold-gradient">Delivered to your door.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mt-6 text-base text-[#A1A19A] max-w-xl mx-auto leading-relaxed">
+            <p className="mt-6 text-base text-[#6B5E4E] max-w-xl mx-auto leading-relaxed">
               Every order is hand-packed with care and shipped straight from our Mumbai atelier to you.
             </p>
           </Reveal>

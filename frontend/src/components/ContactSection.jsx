@@ -49,16 +49,16 @@ export function ContactSection() {
     "w-full bg-[#0E0E0E] text-[#F8F8F6] border border-[#D4AF37]/30 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] outline-none px-4 py-3 placeholder-[#6E6E68] text-sm transition-colors";
 
   return (
-    <section id="contact" data-testid="contact-section" className="relative py-24 sm:py-32 bg-[#070707]">
+    <section id="contact" data-testid="contact-section" className="relative py-24 sm:py-32 bg-[#F5EFE6]">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-14 lg:grid-cols-2">
           <div>
             <SectionLabel testId="contact-label">Contact</SectionLabel>
             <Reveal delay={0.1}>
-              <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#F8F8F6] leading-tight">
+              <h2 className="mt-4 f-serif text-3xl sm:text-4xl lg:text-5xl font-light text-[#241E17] leading-tight">
                 Talk to us.
               </h2>
-              <p className="mt-5 text-base text-[#A1A19A] leading-relaxed max-w-md">
+              <p className="mt-5 text-base text-[#6B5E4E] leading-relaxed max-w-md">
                 Questions about a fragrance, your order, or a gift? Reach us directly — this form is
                 for general inquiries, not orders. To order, use the WhatsApp button on any product page.
               </p>
@@ -76,7 +76,7 @@ export function ContactSection() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-fit items-center gap-2 border border-[#D4AF37]/40 text-[#F8F8F6] py-3 px-6 hover:border-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all duration-300 text-sm"
+                className="inline-flex w-fit items-center gap-2 border border-[#D4AF37]/50 text-[#241E17] py-3 px-6 hover:border-[#D4AF37] hover:bg-[#D4AF37]/15 transition-all duration-300 text-sm"
               >
                 <Instagram size={18} className="text-[#D4AF37]" /> Follow on Instagram
               </a>

@@ -73,7 +73,7 @@ export function ContactSection() {
               </button>
               <a
                 data-testid="contact-instagram-link"
-                href="https://instagram.com"
+                href="https://www.instagram.com/meeandu.fragrance"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-fit items-center gap-2 border border-[#D4AF37]/50 text-[#241E17] py-3 px-6 hover:border-[#D4AF37] hover:bg-[#D4AF37]/15 transition-all duration-300 text-sm"

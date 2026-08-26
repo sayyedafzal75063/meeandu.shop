@@ -43,3 +43,8 @@ Exact rebuild of the reference site https://attar-shop-premium.emergent.host/ â€
 1. Push to GitHub once user provides repo URL + PAT
 2. Replace Instagram placeholder with real profile URL
 3. Optional: contact-messages tab in admin
+
+## Changelog
+- 2026-08-26: Converted Home content sections (trust badges, featured, offers, story, CTA, contact) to warm cream #F5EFE6 with dark text (#241E17 headings / #6B5E4E body); hero, marquee, footer kept dark. Files: Home.jsx, ContactSection.jsx.
+- 2026-08-26: Added frontend/public/_redirects (`/*  /index.html  200`) to fix Netlify SPA deep-link 404s (e.g. /admin direct load & refresh). Verified 100% by testing_agent on preview. Requires Netlify redeploy to take effect on the live site.
+

@@ -31,7 +31,11 @@ export default function ProductDetail() {
       return;
     }
     setError("");
-    const size = product.sizes[sizeIdx];
+    const size = Array.isArray(product.sizes) ? product.sizes[sizeIdx] : null;
+    if (!size) {
+      setError("This product has no available sizes to order.");
+      return;
+    }
     const lines = [
       "Hi Meè & U! I'd like to order:",
       "",
@@ -116,7 +120,7 @@ export default function ProductDetail() {
               <div className="mt-8">
                 <p className="f-mono text-[10px] uppercase tracking-[0.25em] text-[#C5A059] mb-3">Size</p>
                 <div className="flex flex-wrap gap-3">
-                  {product.sizes.map((s, i) => (
+                  {(Array.isArray(product.sizes) ? product.sizes : []).map((s, i) => (
                     <button
                       key={i}
                       data-testid={`size-option-${i}`}

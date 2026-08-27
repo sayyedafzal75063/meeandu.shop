@@ -29,12 +29,12 @@ export default function Home() {
   const fade = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   useEffect(() => {
-    api.get("/products").then((r) => setProducts(r.data)).catch(() => {});
-    api.get("/offers").then((r) => setOffers(r.data)).catch(() => setOffers([]));
+    api.get("/products").then((r) => setProducts(Array.isArray(r.data) ? r.data : [])).catch(() => setProducts([]));
+    api.get("/offers").then((r) => setOffers(Array.isArray(r.data) ? r.data : [])).catch(() => setOffers([]));
   }, []);
 
-  const attars = products.filter((p) => p.category === "Attar" && p.featured).slice(0, 2);
-  const perfumes = products.filter((p) => p.category === "Perfume" && p.featured).slice(0, 2);
+  const attars = (Array.isArray(products) ? products : []).filter((p) => p.category === "Attar" && p.featured).slice(0, 2);
+  const perfumes = (Array.isArray(products) ? products : []).filter((p) => p.category === "Perfume" && p.featured).slice(0, 2);
 
   const orderCombo = async (offer) => {
     const num = await fetchPrimaryWhatsApp();
@@ -186,7 +186,7 @@ export default function Home() {
                     <div className="p-6 sm:p-7">
                       <h3 className="f-serif text-2xl text-[#F8F8F6]">{o.name}</h3>
                       <p className="mt-2 f-mono text-xs text-[#A1A19A]">
-                        {o.product_ids
+                        {(Array.isArray(o.product_ids) ? o.product_ids : [])
                           .map((pid) => products.find((p) => p.id === pid)?.name)
                           .filter(Boolean)
                           .join(" + ")}

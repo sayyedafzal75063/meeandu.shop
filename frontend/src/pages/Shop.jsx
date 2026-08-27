@@ -19,13 +19,14 @@ export default function Shop() {
   useEffect(() => {
     api
       .get("/products")
-      .then((r) => setProducts(r.data))
-      .catch(() => {})
+      .then((r) => setProducts(Array.isArray(r.data) ? r.data : []))
+      .catch(() => setProducts([]))
       .finally(() => setLoading(false));
   }, []);
 
-  const count = (key) => (key === "All" ? products.length : products.filter((p) => p.category === key).length);
-  const visible = tab === "All" ? products : products.filter((p) => p.category === tab);
+  const list = Array.isArray(products) ? products : [];
+  const count = (key) => (key === "All" ? list.length : list.filter((p) => p.category === key).length);
+  const visible = tab === "All" ? list : list.filter((p) => p.category === tab);
 
   return (
     <div data-testid="shop-page" className="bg-[#070707] min-h-screen">

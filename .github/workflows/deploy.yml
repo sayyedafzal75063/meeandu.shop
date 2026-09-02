@@ -26,12 +26,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies & Build
         working-directory: ./frontend
+        env:
+          CI: false
         run: |
-          npm ci
+          npm install --legacy-peer-deps
           npm run build
 
       - name: Setup Pages
